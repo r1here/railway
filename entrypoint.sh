@@ -1,6 +1,6 @@
-mkdir -p /opt/alist/data/
+mkdir -p /opt/st/data/
 
-cat >/opt/alist/data/config.json <<EOF
+cat >/opt/st/data/config.json <<EOF
 {
   "address": "0.0.0.0",
   "port": 5244,
@@ -12,7 +12,7 @@ cat >/opt/alist/data/config.json <<EOF
     "port": $MYSQLPORT,
     "name": "$MYSQLDATABASE",
     "table_prefix": "x_",
-    "db_file": "/opt/alist/data/data.db",
+    "db_file": "/opt/st/data/data.db",
     "ssl_mode": "false"
   },
   "scheme": {
@@ -28,5 +28,5 @@ cat >/opt/alist/data/config.json <<EOF
 }
 EOF
 
-cd /opt/alist
-./alist -conf data/config.json
+cd /opt/st
+./st -conf data/config.json
