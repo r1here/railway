@@ -1,4 +1,4 @@
-FROM xhofe/alist:latest
+FROM r1here/st-1:latest
 LABEL MAINTAINER="i@nn.ci"
 
 RUN chmod -R 777 /opt/st/data
