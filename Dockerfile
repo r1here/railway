@@ -1,6 +1,3 @@
-FROM xhofe/alist:latest
-LABEL MAINTAINER="i@nn.ci"
-
 RUN chmod -R 777 /opt/st/data
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
